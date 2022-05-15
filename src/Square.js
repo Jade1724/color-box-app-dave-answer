@@ -1,16 +1,20 @@
-const Square = ({ colorValue, hexValue, isDarkText}) => {
+const Square = ({ colorValue, hexValue, isDarkText }) => {
   return (
-      <section
+    <section
       className="square"
-      style={{backgroundColor: colorValue, color: isDarkText ? "#000" : "#FFF" }}>
-          <p>{colorValue ? colorValue: "Empty Value"}</p>
-          <p>{hexValue ? hexValue : null}</p>
-      </section>
-  )
-}
+      style={{
+        backgroundColor: colorValue,
+        color: isDarkText ? "#000" : "#FFF",
+      }}
+    >
+      <p>{colorValue ? colorValue : "Empty Value"}</p>
+      <p>{hexValue ? hexValue : null}</p>
+    </section>
+  );
+};
 
 Square.defaultProps = {
-    colorValue: "Empty Color Value"
-}
+  colorValue: "Empty Color Value",
+};
 
-export default Square
+export default Square;
